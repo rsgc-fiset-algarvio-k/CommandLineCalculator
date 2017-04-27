@@ -43,23 +43,23 @@ if selection == 1 {
     var x = helperOne.getDoubleInput(with: "What is the first value?")
     var y = helperOne.getDoubleInput(with: "What is the second value? ")
     
-    result = myCalculator.add(this: x, that: -y)
+    result = myCalculator.subtract(this: x, that: y)
     
 } else if selection == 3 {
     var x = helperOne.getDoubleInput(with: "What is the first value?")
     var y = helperOne.getDoubleInput(with: "What is the second value? ")
     
-    result = myCalculator.add(this: x * y, that: 0)
+    result = myCalculator.multiply(this: x, that: y)
 } else if selection == 4 {
     var x = helperOne.getDoubleInput(with: "What is the first value?")
     var y = helperOne.getDoubleInput(with: "What is the second value? ")
     
-    result = myCalculator.add(this: x / y, that: 0)
+    result = myCalculator.divide(this: x, that: y)
 } else if selection == 5 {
     var x = helperOne.getDoubleInput(with: "What is the first value?")
     var y = helperOne.getDoubleInput(with: "What is the second value? ")
     
-    result = myCalculator.add(this: (pow(x,y)), that: 0)
+    result = myCalculator.power(this: x, that: y)
 }
 
 // Print the result
